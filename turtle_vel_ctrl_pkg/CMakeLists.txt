@@ -208,3 +208,13 @@ add_executable(turtle_vel_ctrl_node src/turtle_vel_ctrl_node.cpp)
   target_link_libraries(turtle_vel_ctrl_node
     ${catkin_LIBRARIES}
   )
+
+  add_executable(turtle_pose_node src/turtle_pose_node.cpp)
+  target_link_libraries(turtle_pose_node
+    ${catkin_LIBRARIES}
+  ) 
+
+  add_executable(turtle_vel_rece_node src/turtle_vel_rece_node.cpp)
+  target_link_libraries(turtle_vel_rece_node
+    ${catkin_LIBRARIES}
+  ) 

@@ -11,9 +11,10 @@ int main(int argc, char *argv[])
      {
         printf("小乌龟要开始移动了\n");
         geometry_msgs::Twist vel_cmd;
-        vel_cmd.linear.x = 0.1;
+        vel_cmd.linear.x = 2.0;
         vel_cmd.linear.y = 0;
         vel_cmd.linear.z = 0;
+        vel_cmd.angular.z = 1.8;
         vel_pub.publish(vel_cmd);
         ros::spinOnce();
 
